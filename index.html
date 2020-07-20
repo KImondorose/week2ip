@@ -14,16 +14,15 @@
         <div class="col-md-12">
         <div class="jumbotron">
     <h1>Calculate Your Akan Name!!</h1>
-    <p> </p>
     <div class="col-md-12">
         <div class="card">
             <h2>What are Akan Names?</h2>
             <p>In Ghanaian culture, children are given their first Names
                 as "day names" that correspond to the day in the week that they were born. This application will help you to determine the 
             </p>
-        </div>
-        </div>
-        <div class="row">
+    </div>
+    </div>
+    <div class="row">
             <div class="col-md-12">
             <div class="card bg-primary text-white">
             <div class="class-title">
@@ -40,48 +39,36 @@
             </div>
             </div>
             </div>
-             
-             <p>Please input your birth date:</p>
-
-             <input id="numb">
-             
-             <button type="button" onclick="myFunction()">Submit</button>
-             
-             <p id="demo"></p>
-             
-             <script>
-             function myFunction() {
-               var x, text;
-             
-               // Get the value of the input field with id="numb"
-               x = document.getElementById("numb").value;
-             
-               // If x is Not a Number or less than one or greater than 31
-               if (isNaN(x) || x < 1 || x > 31) {
+            <p>Please input your birth date (DD):</p>
+                <input id="numb">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
+            <script class="birthdate">
+                function myFunction() {
+                var x, text;
+                    // Get the value of the input field with id="numb"
+                x = document.getElementById("numb").value;
+                     // If x is Not a Number or less than one or greater than 31
+                if (isNaN(x) || x < 1 || x > 31) {
                  text = "Input not valid";
-               } else {
+                } else {
                  text = "Input OK";
-               }
+                }
                document.getElementById("demo").innerHTML = text;
-             }
-             </script> 
-             <p>Please input your birth month ():</p>
-
-             <input id="numb">
-             
-             <button type="button" onclick="myFunction()">Submit</button>
-             
-             <p id="demo"></p>
-             
-             <script>
-             function myFunction() {
-               var x, text;
-             
-               // Get the value of the input field with id="numb"
-               x = document.getElementById("numb").value;
-             
-               // If x is Not a Number or less than one or greater than 10
-               if (isNaN(x) || x < 1 || x > 10) {
+                }
+            </script> 
+                <br>
+                <p>Please input your birth month (MM):</p>
+                <input id="numb">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
+            <script>
+                function myFunction() {
+                var x, text;
+                    // Get the value of the input field with id="numb"
+                x = document.getElementById("numb").value;
+                    // If x is Not a Number or less than one or greater than 12
+               if (isNaN(x) || x < 1 || x > 12) {
                  text = "Input not valid";
                } else {
                  text = "Input OK";
