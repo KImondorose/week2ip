@@ -47,3 +47,13 @@ function selectGender() {
       return false;
     }
   }
+
+  function allLetters(input){
+    var characters = /[^a-z]/gi;
+    input.value = input.value.replace(characters, "");
+  }
+  
+  function digits(input){
+    var digits = /[^0-9]/;
+    input.value = input.value.replace(digits, "");
+  }
