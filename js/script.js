@@ -2,6 +2,7 @@ let DD = function (dateOfBirth){
      prompt (dateOfBirth);
     };
     DD ("Enter Your Date of Birth as two numbers"); 
+    
 
 DD = TRUE;
 if (DD >31) {

@@ -31,22 +31,64 @@
             </div>
             <div class="card-body">
                 <ul>
-                    <li>Enter your birth date.</li>
-                    <li>Enter your birth month.</li>
-                    <li>Enter your birth year.</li>
-                    <li>Enter your gender.</li>
+                    <li>Enter your birth date</li>
+                    <li>Enter your birth month</li>
+                    <li>Enter your birth year</li>
+                    <li>Enter your gender</li>
                     <li>Click submit to see your Akan name</li>
                 </ul>
             </div>
             </div>
             </div>
-            <div>
-                <script src="js/script.js">
-            
-                </script>
              
-             </div>   
-                
+             <p>Please input your birth date:</p>
+
+             <input id="numb">
+             
+             <button type="button" onclick="myFunction()">Submit</button>
+             
+             <p id="demo"></p>
+             
+             <script>
+             function myFunction() {
+               var x, text;
+             
+               // Get the value of the input field with id="numb"
+               x = document.getElementById("numb").value;
+             
+               // If x is Not a Number or less than one or greater than 31
+               if (isNaN(x) || x < 1 || x > 31) {
+                 text = "Input not valid";
+               } else {
+                 text = "Input OK";
+               }
+               document.getElementById("demo").innerHTML = text;
+             }
+             </script> 
+             <p>Please input your birth month ():</p>
+
+             <input id="numb">
+             
+             <button type="button" onclick="myFunction()">Submit</button>
+             
+             <p id="demo"></p>
+             
+             <script>
+             function myFunction() {
+               var x, text;
+             
+               // Get the value of the input field with id="numb"
+               x = document.getElementById("numb").value;
+             
+               // If x is Not a Number or less than one or greater than 10
+               if (isNaN(x) || x < 1 || x > 10) {
+                 text = "Input not valid";
+               } else {
+                 text = "Input OK";
+               }
+               document.getElementById("demo").innerHTML = text;
+             }
+             </script>      
 </div>
 </body>
 </html>
