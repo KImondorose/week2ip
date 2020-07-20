@@ -17,3 +17,7 @@ h2{
     background-image: url("../images/showcase.jpg");
     margin-top: 40px;
 }
+.birthdate{
+    float: left;
+    width: 100%;
+}
