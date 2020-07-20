@@ -37,4 +37,4 @@ rosewairimu1@gmail.com
 
 ### License
 Copyright (c) {2020} **Rose Kimondo**
-[Akan Names Calculator][kimondorose.github.io/portfolio/]
+[Akan Names Calculator][https://kimondorose.github.io/week2ip/]
