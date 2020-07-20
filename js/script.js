@@ -1,42 +1,10 @@
-let DD = function (dateOfBirth){
-     prompt (dateOfBirth);
-    };
-    DD ("Enter Your Date of Birth as two numbers"); 
-    
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
 
-DD = TRUE;
-if (DD >31) {
-    console.log ("Continue");
+function giveName() {
+  var name = document.getElementById("yourNames").value;
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
 }
-else if (DD<1) {
-    console.log ("Continue");
-}
-else {
-    console.log ("Please enter a valid date");
-}
-
-
-
-let MM = function (monthOfBirth){
-         prompt (monthOfBirth);
-       };
-       MM ("Enter Your Month of Birth as two numbers");
-
-let CC = function (yearOfBirth){
-        prompt (yearOfBirth);
-       };
-       CC ("Enter Your Year of Birth as first two numbers");
-
-let YY = function (yearOfBirth){
-        prompt (yearOfBirth);
-       };
-       YY ("Enter Your Year of Birth as last two numbers");
-    
-
-    
-let yourGender = function (gender){
-       prompt  (gender);
-       };
-       yourGender ("Enter Your Gender as F or M"); 
-
-
