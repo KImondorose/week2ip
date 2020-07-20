@@ -65,3 +65,31 @@ function selectGender() {
       return false;
     }
   }
+
+  function validDay(){
+    var thirtyOneMonths = [1, 3, 5, 7, 9, 10, 12];
+    var monthNumber = parseInt(document.getElementById("monthBorn").value);
+    var dayNumber = parseInt(document.getElementById("dayBorn").value);
+    var yearNumber = parseInt(document.getElementById("yearBorn").value);
+    var yearNumber = parseInt(document.getElementById("centuryBorn").value);
+    var a = yearNumber % 100;
+    var b = yearNumber % 400;
+    var c = yearNumber % 4;
+    var d = thirtyOneMonths.includes(monthNumber);
+    if (monthNumber === 2 && dayNumber > 28 && a === 0 && b !== 0){
+      alert("Invalid day: The entered year, February had 28 days.");
+      return false;
+    }
+    else if (monthNumber === 2 && dayNumber > 28 && c !== 0) {
+      alert("Invalid day: The entered year, February had 28 days.");
+      return false;
+    }
+    else if (!d && dayNumber > 30) {
+      alert("Invalid day: The selected month has 30 days");
+      return false;
+    }
+    else if (dayNumber > 31 || dayNumber < 1) {
+      alert("Invalid day: Months have a possible 1 to 31 days");
+      return false;
+    }
+  }
