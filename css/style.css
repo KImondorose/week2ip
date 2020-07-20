@@ -1,5 +1,5 @@
 h1{
-    text-align: right;
+    text-align: center;
     font-family: fantasy;
     font-weight: bold;
   }
@@ -36,22 +36,27 @@ h1{
 }
 
 .pfooter{
-    float: left;
+    float: center;
     width: 100%;
     text-align: center;
     width: 100%;
-    margin: 2%; 
+    margin: 1%; 
     border-style: dotted;
     border-width: 0.1rem;
     color: red;
 }
 
 .navfooter{
-    float: left;
+    float: center;
     text-align: center;
     width: 100%; 
-    margin: 2%;
+    margin: 1%;
     padding: 2%;
+}
+
+a{
+    text-align:center;
+    color:black;
 }
 
   
