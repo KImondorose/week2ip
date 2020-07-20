@@ -23,3 +23,19 @@ function selectGender() {
       return false;
     }
   }
+
+  function giveYear() {
+    var year = document.getElementById("yearBorn").value;
+    if (year == "") {
+      alert("Year must be filled out");
+      return false;
+    }
+  }
+  
+  function giveMonth() {
+    var month = document.getElementById("monthBorn").value;
+    if (month == "0") {
+      alert("Month must be selected");
+      return false;
+    }
+  }
