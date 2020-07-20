@@ -81,6 +81,69 @@
              }
              </script>   
             </div>   
+            <div class= "row">
+                <p>Please input the first two numbers of your birth year (CC):</p>
+                <input class= "col-md-12" id="numb">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
+            <script>
+                function myFunction() {
+                var x, text;
+                    // Get the value of the input field with id="numb"
+                x = document.getElementById("numb").value;
+                    // If x is Not a Number or less than one or greater than 20
+               if (isNaN(x) || x < 1 || x > 20) {
+                 text = "Input not valid";
+               } else {
+                 text = "Input OK";
+               }
+               document.getElementById("demo").innerHTML = text;
+             }
+             </script>   
+            </div>  
+            <div class= "row">
+                <p>Please input the last two numbers of your birth year (YY):</p>
+                <input class= "col-md-12" id="numb">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
+            <script>
+                function myFunction() {
+                var x, text;
+                    // Get the value of the input field with id="numb"
+                x = document.getElementById("numb").value;
+                    // If x is Not a Number or less than zero or greater than 99
+               if (isNaN(x) || x < 0 || x > 99) {
+                 text = "Input not valid";
+               } else {
+                 text = "Input OK";
+               }
+               document.getElementById("demo").innerHTML = text;
+             }
+             </script>   
+            </div>   
+
+            <div class= "row">
+                <p>Please input your gender (F/M):</p>
+                <input class= "col-md-12" id="text">
+                <button type="button" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
+            <script>
+                function myFunction() {
+                var x, text;
+                    // Get the value of the input field with id="text"
+                x = document.getElementById("text").value;
+                    // If x is Not a Number or less than one or greater than 20
+               if ("F") {
+                 text = "Input valid";
+               } else if ("M"){
+                 text = "Input OK";
+               } else {
+                   text = "Input not valid";
+               }
+               document.getElementById("demo").innerHTML = text;
+             }
+             </script>   
+            </div>   
 
 </div>
 </body>
