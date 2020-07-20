@@ -1,16 +1,22 @@
 h1{
-    text-align: center;
-    font-family: serif;
+    text-align: right;
+    font-family: fantasy;
     font-weight: bold;
   }
+
+  #output{
+    width: 400px;
+    height: 200px;
+  }
+  
   .bg-image{
     background-image: url('../images/showcase.jpg');
-    padding: 60px;
-    background-size: contain;
-    opacity: 2.0;
+    padding: 70px;
+    background-size: auto;
+    opacity: 5.0;
   }
   h3{
-    text-align: center;
+    text-align: left;
   }
   h2{
     text-align: center;
@@ -18,9 +24,34 @@ h1{
   textarea{
     margin-top: 10px;
   }
-  #output{
-    width: 400px;
-    height: 50px;
-  }
   
+  footer{
+    padding: 5%;
+    border: 1px solid rgb(238, 6, 6);
+    border-style: dotted;
+    border-width: 0.1rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: hidden;
+}
+
+.pfooter{
+    float: left;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    margin: 2%; 
+    border-style: dotted;
+    border-width: 0.1rem;
+    color: red;
+}
+
+.navfooter{
+    float: left;
+    text-align: center;
+    width: 100%; 
+    margin: 2%;
+    padding: 2%;
+}
+
   
