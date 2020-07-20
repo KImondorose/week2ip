@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,17 @@
         <div class=row>
         <div class="col-md-12">
         <div class="jumbotron">
-    <h1>Calculate Your Akan Name!!</h1>
+            <h1>Calculate Your Akan Name!!</h1>
+        </div>
       <div class="container">
         <div class="bg-image">
-          <h1 class= "akannames">AKAN NAMES</h1>
+            <h1 class= "akannames">AKAN NAMES</h1>
         </div>
       </div>
       <div class="container-fluid">
         <h3><strong>What are Akan names?</strong></h3>
-        <p class="text-justify">AKAN names are from the Ghanaian culture <strong>Children in Ghana are given a first name as a 'day name'</strong> 
-            which corresponds to the day in the week they were born. Here is a table that illustrates the name:</p>
+        <p class="text-justify">AKAN names are from the Ghanaian culture.  <strong>Children in Ghana are given a first name as a 'day name'</strong> 
+            which corresponds to the day in the week they were born. Here is a table that illustrates the names:</p>
         <table class="table table-hover table-dark">
           <thead class="thead-dark">
             <tr>
@@ -78,22 +79,27 @@
           </tbody>
         </table>
       </div>
-      <p>Please input your details below to get your Akan name :)</p>
+      <div class="col-md-12">
+        <p class="text-justify">Do you know your birthday but have no idea of what day of the week you were born? 
+            Luckily we can calculate the day of the week that you were born and give you your Akan name </p>
+        <p>Curious to know which yours is?? Please input your details below to get your Akan name :) :)</p>
+    </div>
+      
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-10">
            <div class="card" id="card">
              <div class="card-title">
                <h2>Enter the Required Details</h2> <br><br>
              </div>
               <div class="card-body">
-                <form class="" id="form" action="index.html" method="post">
+                <form class="form" id="form" action="index.html" method="post">
                   <div class="form-group">
-                    <label for="">Enter Name</label>
+                    <label for="">Your Name</label>
                     <input type="text" class="form-control" id="yourNames" onkeyup="allLetters(this)" name="your name">
                   </div>
                   <div class="form-group">
-                    <label for="">Gender</label>
+                    <label for="">Your Gender</label>
                     <select class="custom-select" id="gender" name="Gender">
                       <option value="1">Gender...</option>
                       <option value="2">Male</option>
@@ -101,15 +107,15 @@
                      </select>
                   </div>
                   <div class="form-group">
-                    <label for="">Enter Century Born</label>
+                    <label for="">The Century Born</label>
                     <input type="number" class="form-control" id="centuryBorn" onkeyup="digits(this)" name="year" value="">
                   </div>
                   <div class="form-group">
-                    <label for="">Enter Year Born</label>
+                    <label for="">The Year Born</label>
                     <input type="number" class="form-control" id="yearBorn" onkeyup="digits(this)" name="year" value="">
                   </div>
                   <div class="form-group">
-                    <label for=""> Enter Month Born</label>
+                    <label for=""> The Month Born</label>
                     <select class="custom-select" id="monthBorn" name="">
                         <option value="0">Month...</option>
                         <option value="1">January</option>
@@ -127,7 +133,7 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for=""> Enter Day Born</label>
+                    <label for=""> The Day of Month Born</label>
                     <input type="number" class="form-control" id="dayBorn" name="">
                   </div>
                   <div class="form-group">
@@ -137,10 +143,10 @@
               </div>
             </div>
           </div>
-               <div class="col-md-12">
+               <div class="col-md-10">
                  <div class="card">
                    <div class="card-title" id="results">
-                     <h2>View Results</h2>
+                     <h2>Your Akan Name:)</h2>
                    </div>
                    <div class="card-body" id="results-card">
                      <form class="result" id="answer" action="index.html" method="post">
@@ -156,7 +162,9 @@
                </div>
              </div>
            </div>
-      </div>
+      
+</div>
+</div>
 </div>
 <footer class="footer">
     <div class="footerborder">
@@ -166,7 +174,7 @@
             <a href="https://fairafric.com/let-the-name-speak-the-deep-meaning-of-ghanaian-first-names">Article</a>
             <a href="https://journals.co.za/content/journal/10520/EJC-1191671785?crawler=true&mimeType=application%2Fpdf"> Journal</a>
         </nav>
-            <p class=copyright>Copyright &copy; 2020 ... Ghanaian Akan Names</p>
+            <p class=copyright>Copyright &copy; 2020 ... Ghanaian Akan Names Calculator</p>
     </div>
 </footer> 
 <script src="js/script.js" type="text/javascript"></script>
