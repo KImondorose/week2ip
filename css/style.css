@@ -8,7 +8,7 @@ h1{
     font-weight: bolder;
   }
 
-  #output{
+#output{
     width: 600px;
     height: 100px;
   }
@@ -30,14 +30,16 @@ h1{
   }
   
   footer{
-    padding: 5%;
+    padding: 2%;
     border: 1px solid rgb(238, 6, 6);
     border-style: dotted;
     border-width: 0.1rem;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-style: hidden;
+    border-style: double;
     float: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .pfooter{
